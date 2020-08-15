@@ -12,6 +12,8 @@ import JGProgressHUD
 class CategoriesTVC: UITableViewController {
     
     var categories: [Category] = []
+    var page: Int = 0
+    var categoryID = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +22,25 @@ class CategoriesTVC: UITableViewController {
         hud.textLabel.text = "Загрузка"
         hud.show(in: self.view)
         
-        CatalogLoader().loadCategories(completition: { categories in
-            self.categories = categories.sorted(by: {
-                $0.sortOrder < $1.sortOrder
+        if page == 0 {
+            CatalogLoader().loadCategories(completition: { categories in
+                self.categories = categories.sorted(by: {
+                    $0.sortOrder < $1.sortOrder
+                })
+                
+                self.tableView.reloadData()
+                hud.dismiss()
             })
-            
-            self.tableView.reloadData()
-            hud.dismiss()
-        })
+        } else {
+            CatalogLoader().loadSubcategories(categoryID: categoryID, completition: { categories in
+                self.categories = categories.sorted(by: {
+                    $0.sortOrder < $1.sortOrder
+                })
+                
+                self.tableView.reloadData()
+                hud.dismiss()
+            })
+        }
     }
     
 
@@ -60,12 +73,32 @@ class CategoriesTVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "toSubcategories", sender: nil)
-        let cell = tableView.cellForRow(at: indexPath) as! CategoryTVCell
-        
-        SubcategoriesTVC.categoryID = cell.id
-        
-        tableView.deselectRow(at: indexPath, animated: true)
+        if page == 0 {
+//            performSegue(withIdentifier: "toSubcategories", sender: nil)
+            let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "categoriesVC") as! CategoriesTVC
+            nextVC.page = 1
+            
+            let cell = tableView.cellForRow(at: indexPath) as! CategoryTVCell
+            nextVC.categoryID = cell.id
+            
+            show(nextVC, sender: nil)
+            tableView.deselectRow(at: indexPath, animated: true)
+        } else {
+            performSegue(withIdentifier: "toProducts", sender: nil)
+            let cell = tableView.cellForRow(at: indexPath) as! CategoryTVCell
+            
+            ProductsVC.subcategoryID = cell.id
+            
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "toSubcategories" {
+            guard let destinationVC = segue.destination as? CategoriesTVC else { return }
+            destinationVC.page = 1
+        }
     }
 
 }

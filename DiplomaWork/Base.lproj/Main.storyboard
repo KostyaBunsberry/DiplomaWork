@@ -174,7 +174,7 @@
         <!--Категории-->
         <scene sceneID="zge-Uw-a9w">
             <objects>
-                <tableViewController id="gDN-Fs-4l0" customClass="CategoriesTVC" customModule="DiplomaWork" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="categoriesVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gDN-Fs-4l0" customClass="CategoriesTVC" customModule="DiplomaWork" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="g0p-ZE-p3f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,71 +223,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Категории" id="fEV-nw-26g"/>
                     <connections>
-                        <segue destination="MC1-Nc-6ym" kind="show" identifier="toSubcategories" id="tPI-tz-6D9"/>
+                        <segue destination="PcF-DV-wk4" kind="show" identifier="toProducts" id="CcD-hz-Aka"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viL-Gq-MQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1640.5797101449277" y="-342.1875"/>
-        </scene>
-        <!--Подкатегории-->
-        <scene sceneID="7ea-dA-5Ei">
-            <objects>
-                <tableViewController id="MC1-Nc-6ym" customClass="SubcategoriesTVC" customModule="DiplomaWork" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nsa-as-m02">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="mFs-NM-len" customClass="CategoryTVCell" customModule="DiplomaWork" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="105.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFs-NM-len" id="fEZ-Xe-psi">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="105.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0BR-CQ-z9t">
-                                            <rect key="frame" x="20" y="11" width="83" height="83.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="0BR-CQ-z9t" secondAttribute="height" multiplier="1:1" id="DJL-59-yfg"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j38-fI-zVM">
-                                            <rect key="frame" x="123" y="39.5" width="251" height="27"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="0BR-CQ-z9t" firstAttribute="width" secondItem="fEZ-Xe-psi" secondAttribute="width" multiplier="0.2" id="4A0-96-LlV"/>
-                                        <constraint firstItem="j38-fI-zVM" firstAttribute="leading" secondItem="0BR-CQ-z9t" secondAttribute="trailing" constant="20" id="I6j-2J-6bm"/>
-                                        <constraint firstItem="j38-fI-zVM" firstAttribute="centerY" secondItem="fEZ-Xe-psi" secondAttribute="centerY" id="INW-so-yXE"/>
-                                        <constraint firstItem="0BR-CQ-z9t" firstAttribute="top" secondItem="fEZ-Xe-psi" secondAttribute="topMargin" id="ROD-ZS-AoD"/>
-                                        <constraint firstItem="0BR-CQ-z9t" firstAttribute="bottom" secondItem="fEZ-Xe-psi" secondAttribute="bottomMargin" id="hFQ-aD-ukg"/>
-                                        <constraint firstItem="0BR-CQ-z9t" firstAttribute="leading" secondItem="fEZ-Xe-psi" secondAttribute="leadingMargin" id="qzU-2m-OX3"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="j38-fI-zVM" secondAttribute="trailing" constant="20" id="zks-Oi-l9f"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="categoryImage" destination="0BR-CQ-z9t" id="uOw-Zc-Ylr"/>
-                                    <outlet property="categoryTitle" destination="j38-fI-zVM" id="Hnr-aa-9ES"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="MC1-Nc-6ym" id="LXE-96-hYq"/>
-                            <outlet property="delegate" destination="MC1-Nc-6ym" id="yOS-I0-0Pq"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Подкатегории" id="TwE-26-bsj"/>
-                    <connections>
-                        <segue destination="PcF-DV-wk4" kind="show" identifier="toProducts" id="aEo-mJ-Str"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NuH-5i-ts4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2497" y="-342"/>
         </scene>
         <!--Товары-->
         <scene sceneID="lkO-xA-5bG">
@@ -365,7 +306,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eW-fV-2Nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3331.884057971015" y="-342.1875"/>
+            <point key="canvasLocation" x="2517" y="-342"/>
         </scene>
         <!--ProductVC-->
         <scene sceneID="tBT-kN-TjH">
@@ -453,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWs-eq-LzG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4182.608695652174" y="-342.1875"/>
+            <point key="canvasLocation" x="3368" y="-342"/>
         </scene>
         <!--Корзина-->
         <scene sceneID="v0h-AZ-0WE">
