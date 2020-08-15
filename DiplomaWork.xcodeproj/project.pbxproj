@@ -18,7 +18,6 @@
 		1732684024E301B50032E433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1732683E24E301B50032E433 /* LaunchScreen.storyboard */; };
 		1732684824E307BC0032E433 /* CategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684724E307BC0032E433 /* CategoryTVCell.swift */; };
 		1732684A24E307D30032E433 /* CategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684924E307D30032E433 /* CategoriesTVC.swift */; };
-		1732684C24E307F20032E433 /* SubcategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684B24E307F20032E433 /* SubcategoriesTVC.swift */; };
 		1732684E24E308490032E433 /* CatalogLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684D24E308490032E433 /* CatalogLoader.swift */; };
 		173A722524E7F39700ADD2F6 /* ProductSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A722424E7F39700ADD2F6 /* ProductSaver.swift */; };
 		17AFDFC224E43B1F00AEE39B /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFDFC124E43B1F00AEE39B /* ProductVC.swift */; };
@@ -39,7 +38,6 @@
 		1732684124E301B50032E433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1732684724E307BC0032E433 /* CategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVCell.swift; sourceTree = "<group>"; };
 		1732684924E307D30032E433 /* CategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTVC.swift; sourceTree = "<group>"; };
-		1732684B24E307F20032E433 /* SubcategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesTVC.swift; sourceTree = "<group>"; };
 		1732684D24E308490032E433 /* CatalogLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogLoader.swift; sourceTree = "<group>"; };
 		173A722424E7F39700ADD2F6 /* ProductSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSaver.swift; sourceTree = "<group>"; };
 		17AFDFC124E43B1F00AEE39B /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				1732684924E307D30032E433 /* CategoriesTVC.swift */,
-				1732684B24E307F20032E433 /* SubcategoriesTVC.swift */,
 				17215A6E24E6846F00811CCA /* CartVC.swift */,
 				1706EFE724E3232800FDBB7E /* ProductsVC.swift */,
 				17AFDFC124E43B1F00AEE39B /* ProductVC.swift */,
@@ -259,7 +256,6 @@
 				1706EFE824E3232800FDBB7E /* ProductsVC.swift in Sources */,
 				17215A6F24E6846F00811CCA /* CartVC.swift in Sources */,
 				1732684E24E308490032E433 /* CatalogLoader.swift in Sources */,
-				1732684C24E307F20032E433 /* SubcategoriesTVC.swift in Sources */,
 				17215A6D24E6837500811CCA /* CartTVCell.swift in Sources */,
 				1732683424E301B20032E433 /* AppDelegate.swift in Sources */,
 				1732684A24E307D30032E433 /* CategoriesTVC.swift in Sources */,
