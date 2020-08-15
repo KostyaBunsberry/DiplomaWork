@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1706EFE624E3231A00FDBB7E /* ProductCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706EFE524E3231A00FDBB7E /* ProductCVCell.swift */; };
+		1706EFE824E3232800FDBB7E /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706EFE724E3232800FDBB7E /* ProductsVC.swift */; };
+		17215A6D24E6837500811CCA /* CartTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17215A6C24E6837500811CCA /* CartTVCell.swift */; };
+		17215A6F24E6846F00811CCA /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17215A6E24E6846F00811CCA /* CartVC.swift */; };
 		1732683424E301B20032E433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732683324E301B20032E433 /* AppDelegate.swift */; };
 		1732683624E301B20032E433 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732683524E301B20032E433 /* SceneDelegate.swift */; };
-		1732683824E301B20032E433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732683724E301B20032E433 /* ViewController.swift */; };
 		1732683B24E301B20032E433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1732683924E301B20032E433 /* Main.storyboard */; };
 		1732683D24E301B50032E433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1732683C24E301B50032E433 /* Assets.xcassets */; };
 		1732684024E301B50032E433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1732683E24E301B50032E433 /* LaunchScreen.storyboard */; };
+		1732684824E307BC0032E433 /* CategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684724E307BC0032E433 /* CategoryTVCell.swift */; };
+		1732684A24E307D30032E433 /* CategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684924E307D30032E433 /* CategoriesTVC.swift */; };
+		1732684C24E307F20032E433 /* SubcategoriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684B24E307F20032E433 /* SubcategoriesTVC.swift */; };
+		1732684E24E308490032E433 /* CatalogLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1732684D24E308490032E433 /* CatalogLoader.swift */; };
+		173A722524E7F39700ADD2F6 /* ProductSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173A722424E7F39700ADD2F6 /* ProductSaver.swift */; };
+		17AFDFC224E43B1F00AEE39B /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFDFC124E43B1F00AEE39B /* ProductVC.swift */; };
+		95669043FA223B24B3921873 /* Pods_DiplomaWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51693C7E9BB1C2E60A294CBE /* Pods_DiplomaWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1706EFE524E3231A00FDBB7E /* ProductCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCVCell.swift; sourceTree = "<group>"; };
+		1706EFE724E3232800FDBB7E /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		17215A6C24E6837500811CCA /* CartTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTVCell.swift; sourceTree = "<group>"; };
+		17215A6E24E6846F00811CCA /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
 		1732683024E301B20032E433 /* DiplomaWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiplomaWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1732683324E301B20032E433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1732683524E301B20032E433 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1732683724E301B20032E433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1732683A24E301B20032E433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1732683C24E301B50032E433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1732683F24E301B50032E433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1732684124E301B50032E433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1732684724E307BC0032E433 /* CategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVCell.swift; sourceTree = "<group>"; };
+		1732684924E307D30032E433 /* CategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTVC.swift; sourceTree = "<group>"; };
+		1732684B24E307F20032E433 /* SubcategoriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesTVC.swift; sourceTree = "<group>"; };
+		1732684D24E308490032E433 /* CatalogLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogLoader.swift; sourceTree = "<group>"; };
+		173A722424E7F39700ADD2F6 /* ProductSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSaver.swift; sourceTree = "<group>"; };
+		17AFDFC124E43B1F00AEE39B /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		4C1378985078DA111F836A1F /* Pods-DiplomaWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomaWork.debug.xcconfig"; path = "Target Support Files/Pods-DiplomaWork/Pods-DiplomaWork.debug.xcconfig"; sourceTree = "<group>"; };
+		51693C7E9BB1C2E60A294CBE /* Pods_DiplomaWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiplomaWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C3D6D7DCC316E70679EB73 /* Pods-DiplomaWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiplomaWork.release.xcconfig"; path = "Target Support Files/Pods-DiplomaWork/Pods-DiplomaWork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95669043FA223B24B3921873 /* Pods_DiplomaWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				1732683224E301B20032E433 /* DiplomaWork */,
 				1732683124E301B20032E433 /* Products */,
+				423A1C30BBFD96EE9AEF5F26 /* Pods */,
+				A637CFD3DC6307320A427043 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,65 @@
 		1732683224E301B20032E433 /* DiplomaWork */ = {
 			isa = PBXGroup;
 			children = (
+				173A722324E7DF0000ADD2F6 /* Controller */,
+				173A722224E7DEFC00ADD2F6 /* View */,
+				173A722124E7DEF600ADD2F6 /* Model */,
 				1732683324E301B20032E433 /* AppDelegate.swift */,
 				1732683524E301B20032E433 /* SceneDelegate.swift */,
-				1732683724E301B20032E433 /* ViewController.swift */,
 				1732683924E301B20032E433 /* Main.storyboard */,
 				1732683C24E301B50032E433 /* Assets.xcassets */,
 				1732683E24E301B50032E433 /* LaunchScreen.storyboard */,
 				1732684124E301B50032E433 /* Info.plist */,
 			);
 			path = DiplomaWork;
+			sourceTree = "<group>";
+		};
+		173A722124E7DEF600ADD2F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1732684D24E308490032E433 /* CatalogLoader.swift */,
+				173A722424E7F39700ADD2F6 /* ProductSaver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		173A722224E7DEFC00ADD2F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17215A6C24E6837500811CCA /* CartTVCell.swift */,
+				1706EFE524E3231A00FDBB7E /* ProductCVCell.swift */,
+				1732684724E307BC0032E433 /* CategoryTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		173A722324E7DF0000ADD2F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1732684924E307D30032E433 /* CategoriesTVC.swift */,
+				1732684B24E307F20032E433 /* SubcategoriesTVC.swift */,
+				17215A6E24E6846F00811CCA /* CartVC.swift */,
+				1706EFE724E3232800FDBB7E /* ProductsVC.swift */,
+				17AFDFC124E43B1F00AEE39B /* ProductVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		423A1C30BBFD96EE9AEF5F26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C1378985078DA111F836A1F /* Pods-DiplomaWork.debug.xcconfig */,
+				94C3D6D7DCC316E70679EB73 /* Pods-DiplomaWork.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A637CFD3DC6307320A427043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51693C7E9BB1C2E60A294CBE /* Pods_DiplomaWork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1732684424E301B50032E433 /* Build configuration list for PBXNativeTarget "DiplomaWork" */;
 			buildPhases = (
+				E798CFD2B80430B93C8F1B6E /* [CP] Check Pods Manifest.lock */,
 				1732682C24E301B20032E433 /* Sources */,
 				1732682D24E301B20032E433 /* Frameworks */,
 				1732682E24E301B20032E433 /* Resources */,
+				7F48BAD544AB54B1AC579F03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +209,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F48BAD544AB54B1AC579F03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomaWork/Pods-DiplomaWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiplomaWork/Pods-DiplomaWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiplomaWork/Pods-DiplomaWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E798CFD2B80430B93C8F1B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiplomaWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1732682C24E301B20032E433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1732683824E301B20032E433 /* ViewController.swift in Sources */,
+				1706EFE824E3232800FDBB7E /* ProductsVC.swift in Sources */,
+				17215A6F24E6846F00811CCA /* CartVC.swift in Sources */,
+				1732684E24E308490032E433 /* CatalogLoader.swift in Sources */,
+				1732684C24E307F20032E433 /* SubcategoriesTVC.swift in Sources */,
+				17215A6D24E6837500811CCA /* CartTVCell.swift in Sources */,
 				1732683424E301B20032E433 /* AppDelegate.swift in Sources */,
+				1732684A24E307D30032E433 /* CategoriesTVC.swift in Sources */,
+				173A722524E7F39700ADD2F6 /* ProductSaver.swift in Sources */,
+				1732684824E307BC0032E433 /* CategoryTVCell.swift in Sources */,
+				17AFDFC224E43B1F00AEE39B /* ProductVC.swift in Sources */,
+				1706EFE624E3231A00FDBB7E /* ProductCVCell.swift in Sources */,
 				1732683624E301B20032E433 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +411,7 @@
 		};
 		1732684524E301B50032E433 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1378985078DA111F836A1F /* Pods-DiplomaWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +431,7 @@
 		};
 		1732684624E301B50032E433 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C3D6D7DCC316E70679EB73 /* Pods-DiplomaWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

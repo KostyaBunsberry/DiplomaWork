@@ -1,0 +1,36 @@
+PODS:
+  - FSPagerView (0.8.3)
+  - JGProgressHUD (2.1)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - Realm (5.3.3):
+    - Realm/Headers (= 5.3.3)
+  - Realm/Headers (5.3.3)
+  - RealmSwift (5.3.3):
+    - Realm (= 5.3.3)
+
+DEPENDENCIES:
+  - FSPagerView
+  - JGProgressHUD
+  - Kingfisher
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - FSPagerView
+    - JGProgressHUD
+    - Kingfisher
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  Realm: 2d57ea355bf8ca2a0964d6bfb38d28d7ff2addf6
+  RealmSwift: 0a709536ecea30eea1d3c514f6ade2ed078dee3c
+
+PODFILE CHECKSUM: ba2e46ced16851ba183077180190f0b9e9d378e5
+
+COCOAPODS: 1.9.3
